@@ -22,6 +22,10 @@ checkbox.addEventListener("change", function () {
     outputDiv.style.backgroundColor = color;
 })
 
+button.addEventListener("click", function () {
+    outputDiv.remove()
+})
+
 console.log(checkbox)
 console.log(textfields)
 console.log(button)
