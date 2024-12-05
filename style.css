@@ -1,6 +1,9 @@
 body {
-    background-color: rgb(44, 44, 44);
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(11,9,121,1) 58%, rgba(8,0,255,0.4) 100%);
     padding: 15rem;
+    font-size: larger;
+    font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
 h1 {
@@ -17,9 +20,19 @@ h1 {
 #div1 > *{
     margin: 0.3rem;
 }
+input {
+    border-radius: 0.3rem;
+}
 
 button {
     padding: 0.3rem 0.7rem;
     border-radius: 0.5rem;
+    color: Red;
+    font-weight: bolder;
 }
 
+#div2 {
+    padding: 1rem;
+    border: black solid 2px;
+    
+}
