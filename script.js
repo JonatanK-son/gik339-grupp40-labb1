@@ -6,7 +6,8 @@ const outputDiv = document.getElementById("div2")
 function eavesdroppingBastard1(e) {
     console.log(e.target)
     let name = e.target.getAttribute("name")
-    console.log(name)
+    if (name === "content")
+        outputDiv.innerHTML = e.target.value
 }
 
 textfields.forEach(function(i) {
@@ -14,7 +15,12 @@ textfields.forEach(function(i) {
     i.addEventListener("blur", eavesdroppingBastard1)
 });
 
-checkbox.addEventListener("input", eavesdroppingBastard1)
+checkbox.addEventListener("change", function () {
+    let colorField = textfields.item(0)
+    let color = colorField.value
+    console.log(color)
+    outputDiv.style.backgroundColor = color;
+})
 
 console.log(checkbox)
 console.log(textfields)
