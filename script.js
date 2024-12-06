@@ -1,6 +1,6 @@
-const checkbox = document.querySelector(".checkbox");
-const textfields = document.querySelectorAll(".textfield");
-const button = document.getElementById("remove");
+const checkbox = document.querySelector(".checkbox")
+const textfields = document.querySelectorAll(".textfield")
+const button = document.getElementById("remove")
 const outputDiv = document.getElementById("div2")
 
 function eavesdroppingBastard1(e) {
@@ -18,8 +18,7 @@ textfields.forEach(function(i) {
 checkbox.addEventListener("change", function () {
     let colorField = textfields.item(0)
     let color = colorField.value
-    console.log(color)
-    outputDiv.style.backgroundColor = color;
+    outputDiv.style.backgroundColor = color
 })
 
 button.addEventListener("click", function () {
