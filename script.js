@@ -25,8 +25,3 @@ checkbox.addEventListener("change", function () {
 button.addEventListener("click", function () {
     outputDiv.remove()
 })
-
-console.log(checkbox)
-console.log(textfields)
-console.log(button)
-console.log(outputDiv)
